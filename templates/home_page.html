@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="zxx" xmlns:http="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title> Welcome to AutoHub </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <!-- External CSS libraries -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-submenu.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-select.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/leaflet.css' %}" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'fonts/flaticon/font/flaticon.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'fonts/linearicons/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/jquery.mCustomScrollbar.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/dropzone.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/slick.css' %}">
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" id="style_sheet" href="{% static 'css/skins/midnight-blue.css' %}">
+
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" href="{% static 'img/favicon.png' %}" type="image/x-icon">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700%7CUbuntu:300,400,700" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/ie10-viewport-bug-workaround.css' %}">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script  src="{% static 'js/ie8-responsive-file-warning.js' %}"></script><![endif]-->
+    <script src="{% static 'js/ie-emulation-modes-warning.js' %}"></script>
+
+</head>
+
+<body>
+<div class="page_loader"></div>
+
+<!-- Main header start -->
+<header class="main-header sticky-header header-with-top">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="navbar-collapse collapse w-100" id="navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="http://127.0.0.1:8000/cars/">
+                            Car Listing
+                        </a>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="http://127.0.0.1:8000/manufacturers/">
+                            Manufacturers
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="http://127.0.0.1:8000/car_types/">
+                            Car Types
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="http://127.0.0.1:8000/users/">
+                             Users
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="http://127.0.0.1:8000/api-auth/login/">
+                            Log in
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- Main header end -->
+
+
+<!-- Banner start -->
+<div class="banner banner_video_bg" id="banner">
+    <div class="pattern-overlay">
+        <a id="bgndVideo" class="player"
+           data-property="{videoURL:'https://www.youtube.com/watch?v=8C_Ho2oxwzo',containment:'.banner_video_bg', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
+    </div>
+    <div id="bannerCarousole" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item banner-max-height active">
+                <div class="carousel-caption banner-slider-inner d-flex h-100 text-center">
+                    <div class="carousel-content container banner-info">
+                        <div class="text-center">
+                            <h1 class="text-uppercase">Welcome to AutoHub</h1>
+                            <p>
+                                It's about time to get a new perspective on Cars.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- Footer start -->
+        <footer class="footer">
+            <div class="container footer-inner">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                        <div class="footer-item clearfix">
+                            <h4>
+                                Contact Info
+                            </h4>
+                            <ul class="contact-info">
+                                <li>
+                                    <i class="flaticon-pin"></i> Sourmenon 34, Kalamaria Thessaloniki, P.C: 55131
+                                </li>
+                                <li>
+                                    <i class="flaticon-mail"></i> <a>evideli92@gmail.com</a>
+                                </li>
+                                <li>
+                                    <i class="flaticon-phone"></i><a>+30-6978860328</a>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                        <div class="footer-item">
+                            <h4>
+                                Useful Links
+                            </h4>
+                            <ul class="links">
+                                <li>
+                                    <a href="http://127.0.0.1:8000/cars/">Car Listing</a>
+                                </li>
+                                <li>
+                                    <a href="http://127.0.0.1:8000/manufacturers/">Manufacturers</a>
+                                </li>
+                                <li>
+                                    <a href="http://127.0.0.1:8000/car_types/">Car Types</a>
+                                </li>
+                                <li>
+                                    <a href="http://127.0.0.1:8000/users/"> Users </a>
+                                </li>
+                                <li>
+                                    <a href="http://127.0.0.1:8000/api-auth/login/"> Log in </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12">
+                        <p class="copy sub-footer">© 2020 <a href="#">Evdoxia Deligianni PMS: 149.</a>
+                            <br> Project for SOFTWARE DEVELOPMENT.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+
+        <script src="{% static 'js/jquery-2.2.0.min.js' %}"></script>
+        <script src="{% static 'js/popper.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap-submenu.js' %}"></script>
+        <script src="{% static 'js/rangeslider.js' %}"></script>
+        <script src="{% static 'js/jquery.mb.YTPlayer.js' %}"></script>
+        <script src="{% static 'js/bootstrap-select.min.js' %}"></script>
+        <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+        <script src="{% static 'js/jquery.scrollUp.js' %}"></script>
+        <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+        <script src="{% static 'js/leaflet.js' %}"></script>
+        <script src="{% static 'js/leaflet-providers.js' %}"></script>
+        <script src="{% static 'js/leaflet.markercluster.js' %}"></script>
+        <script src="{% static 'js/dropzone.js' %}"></script>
+        <script src="{% static 'js/slick.min.js' %}"></script>
+        <script src="{% static 'js/jquery.filterizr.js' %}"></script>
+        <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+        <script src="{% static 'js/jquery.countdown.js' %}"></script>
+        <script src="{% static 'js/app.js' %}"></script>
+
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="{% static 'js/ie10-viewport-bug-workaround.js' %}"></script>
+        <!-- Custom javascript -->
+        <script src="{% static 'js/ie10-viewport-bug-workaround.js' %}"></script>
+</div>
+</body>
+
+</html>
