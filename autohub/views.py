@@ -45,7 +45,7 @@ class ManufacturerList(generics.ListCreateAPIView):
 
 
 class ManufacturerDetail(generics.RetrieveUpdateDestroyAPIView):
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly, ]
     queryset = Manufacturer.objects.all()
     serializer_class = ManufacturerSerializer
 
